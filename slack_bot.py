@@ -5,7 +5,7 @@ from slack.errors import SlackApiError
 slack_token = os.environ.get('SLACK_API_TOKEN')
 
 client = WebClient(token=slack_token)
-msg = "testing!"
+msg = "Cowboys suck and will never see a Super Bowl again. #Niners"
 try:
     response = client.chat_postMessage(
         channel="slack-bots",
